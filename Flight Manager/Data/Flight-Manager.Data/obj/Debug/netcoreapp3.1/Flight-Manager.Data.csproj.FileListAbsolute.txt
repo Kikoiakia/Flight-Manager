@@ -1,0 +1,5 @@
+C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data\bin\Debug\netcoreapp3.1\Flight-Manager.Data.deps.json
+C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data\bin\Debug\netcoreapp3.1\Flight-Manager.Data.dll
+C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data\obj\Debug\netcoreapp3.1\Flight-Manager.Data.csprojAssemblyReference.cache
+C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data\obj\Debug\netcoreapp3.1\Flight-Manager.Data.AssemblyInfoInputs.cache
+C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data\obj\Debug\netcoreapp3.1\Flight-Manager.Data.AssemblyInfo.cs
