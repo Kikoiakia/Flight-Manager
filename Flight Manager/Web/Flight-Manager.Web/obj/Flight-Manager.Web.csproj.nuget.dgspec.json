@@ -4,14 +4,14 @@
     "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Web\\Flight-Manager.Web\\Flight-Manager.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Web\\Flight-Manager.Web\\Flight-Manager.Web.csproj": {
+    "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Web\\Flight-Manager.Web\\Flight-Manager.Web.csproj",
-        "projectName": "Flight-Manager.Web",
-        "projectPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Web\\Flight-Manager.Web\\Flight-Manager.Web.csproj",
+        "projectUniqueName": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj",
+        "projectName": "Flight-Manager.Data.Models",
+        "projectPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj",
         "packagesPath": "C:\\Users\\kiril\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Web\\Flight-Manager.Web\\obj\\",
+        "outputPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,23 +41,242 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[3.1.2, )"
             },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data\\Flight-Manager.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data\\Flight-Manager.Data.csproj",
+        "projectName": "Flight-Manager.Data",
+        "projectPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data\\Flight-Manager.Data.csproj",
+        "packagesPath": "C:\\Users\\kiril\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kiril\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[3.1.2, )"
             },
-            "Microsoft.AspNetCore.Identity.UI": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[3.1.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[3.1.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Web\\Flight-Manager.Web.Models\\Flight-Manager.Web.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Web\\Flight-Manager.Web.Models\\Flight-Manager.Web.Models.csproj",
+        "projectName": "Flight-Manager.Web.Models",
+        "projectPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Web\\Flight-Manager.Web.Models\\Flight-Manager.Web.Models.csproj",
+        "packagesPath": "C:\\Users\\kiril\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Web\\Flight-Manager.Web.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kiril\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Web\\Flight-Manager.Web\\Flight-Manager.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Web\\Flight-Manager.Web\\Flight-Manager.Web.csproj",
+        "projectName": "Flight-Manager.Web",
+        "projectPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Web\\Flight-Manager.Web\\Flight-Manager.Web.csproj",
+        "packagesPath": "C:\\Users\\kiril\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Web\\Flight-Manager.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kiril\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj"
+              },
+              "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data\\Flight-Manager.Data.csproj": {
+                "projectPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data\\Flight-Manager.Data.csproj"
+              },
+              "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Web\\Flight-Manager.Web.Models\\Flight-Manager.Web.Models.csproj": {
+                "projectPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Web\\Flight-Manager.Web.Models\\Flight-Manager.Web.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.1, )"
             }

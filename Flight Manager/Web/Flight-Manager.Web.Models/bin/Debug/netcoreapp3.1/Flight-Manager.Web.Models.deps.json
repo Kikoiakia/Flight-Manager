@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Flight-Manager.Web.Models/1.0.0": {
+        "runtime": {
+          "Flight-Manager.Web.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Flight-Manager.Web.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

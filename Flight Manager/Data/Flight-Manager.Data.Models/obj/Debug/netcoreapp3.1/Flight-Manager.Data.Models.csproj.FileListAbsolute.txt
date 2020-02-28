@@ -1,5 +1,10 @@
 C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data.Models\bin\Debug\netcoreapp3.1\Flight-Manager.Data.Models.deps.json
+C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data.Models\bin\Debug\netcoreapp3.1\Flight-Manager.Data.Models.runtimeconfig.json
+C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data.Models\bin\Debug\netcoreapp3.1\Flight-Manager.Data.Models.runtimeconfig.dev.json
 C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data.Models\bin\Debug\netcoreapp3.1\Flight-Manager.Data.Models.dll
+C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data.Models\bin\Debug\netcoreapp3.1\Flight-Manager.Data.Models.pdb
 C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data.Models\obj\Debug\netcoreapp3.1\Flight-Manager.Data.Models.csprojAssemblyReference.cache
 C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data.Models\obj\Debug\netcoreapp3.1\Flight-Manager.Data.Models.AssemblyInfoInputs.cache
 C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data.Models\obj\Debug\netcoreapp3.1\Flight-Manager.Data.Models.AssemblyInfo.cs
+C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data.Models\obj\Debug\netcoreapp3.1\Flight-Manager.Data.Models.dll
+C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data.Models\obj\Debug\netcoreapp3.1\Flight-Manager.Data.Models.pdb

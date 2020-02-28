@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Flight_Manager.Data.Models
+﻿namespace Flight_Manager.Data.Models
 {
-    class FlightType
+    public class FlightType
     {
+        public int Id { get; set; }
+
+        public int Type { get; set; }
     }
 }
