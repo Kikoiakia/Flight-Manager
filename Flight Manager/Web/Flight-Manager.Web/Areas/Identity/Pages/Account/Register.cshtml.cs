@@ -8,19 +8,24 @@
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.RazorPages;
     using System;
+    using Flight_Manager.Data;
+    using System.Linq;
 
     [AllowAnonymous]
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<FlightUser> _signInManager;
         private readonly UserManager<FlightUser> _userManager;
+        private readonly FlightDbContext _context;
 
         public RegisterModel(
             UserManager<FlightUser> userManager,
-            SignInManager<FlightUser> signInManager)
+            SignInManager<FlightUser> signInManager,
+            FlightDbContext context)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _context = context;
         }
 
         [BindProperty]
@@ -96,6 +101,15 @@
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
+                    if (this._context.Users.Count() == 1)
+                    {
+                        await _userManager.AddToRoleAsync(user, "Admin");
+                    }
+                    else
+                    {
+                        await _userManager.AddToRoleAsync(user, "NotAdmin");
+                    }
+                   
                     return LocalRedirect(returnUrl);
 
                 }

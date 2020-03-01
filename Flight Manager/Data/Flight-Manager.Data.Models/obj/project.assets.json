@@ -890,11 +890,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj",
+      "projectUniqueName": "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj",
       "projectName": "Flight-Manager.Data.Models",
-      "projectPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj",
+      "projectPath": "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj",
       "packagesPath": "C:\\Users\\kiril\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\obj\\",
+      "outputPath": "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

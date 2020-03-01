@@ -11,3 +11,16 @@ C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Da
 C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data\obj\Debug\netcoreapp3.1\Flight-Manager.Data.csproj.CopyComplete
 C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data\obj\Debug\netcoreapp3.1\Flight-Manager.Data.dll
 C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Data\Flight-Manager.Data\obj\Debug\netcoreapp3.1\Flight-Manager.Data.pdb
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Data\Flight-Manager.Data\bin\Debug\netcoreapp3.1\Flight-Manager.Data.deps.json
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Data\Flight-Manager.Data\bin\Debug\netcoreapp3.1\Flight-Manager.Data.runtimeconfig.json
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Data\Flight-Manager.Data\bin\Debug\netcoreapp3.1\Flight-Manager.Data.runtimeconfig.dev.json
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Data\Flight-Manager.Data\bin\Debug\netcoreapp3.1\Flight-Manager.Data.dll
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Data\Flight-Manager.Data\bin\Debug\netcoreapp3.1\Flight-Manager.Data.pdb
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Data\Flight-Manager.Data\bin\Debug\netcoreapp3.1\Flight-Manager.Data.Models.dll
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Data\Flight-Manager.Data\bin\Debug\netcoreapp3.1\Flight-Manager.Data.Models.pdb
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Data\Flight-Manager.Data\obj\Debug\netcoreapp3.1\Flight-Manager.Data.csprojAssemblyReference.cache
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Data\Flight-Manager.Data\obj\Debug\netcoreapp3.1\Flight-Manager.Data.AssemblyInfoInputs.cache
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Data\Flight-Manager.Data\obj\Debug\netcoreapp3.1\Flight-Manager.Data.AssemblyInfo.cs
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Data\Flight-Manager.Data\obj\Debug\netcoreapp3.1\Flight-Manager.Data.csproj.CopyComplete
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Data\Flight-Manager.Data\obj\Debug\netcoreapp3.1\Flight-Manager.Data.dll
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Data\Flight-Manager.Data\obj\Debug\netcoreapp3.1\Flight-Manager.Data.pdb

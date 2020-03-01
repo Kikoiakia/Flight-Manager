@@ -6,3 +6,14 @@ C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Web\Flight-Manager.Web
 C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Web\Flight-Manager.Web.Models\obj\Debug\netcoreapp3.1\Flight-Manager.Web.Models.AssemblyInfo.cs
 C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Web\Flight-Manager.Web.Models\obj\Debug\netcoreapp3.1\Flight-Manager.Web.Models.dll
 C:\Users\kiril\Desktop\Flight site\Website\Flight Manager\Web\Flight-Manager.Web.Models\obj\Debug\netcoreapp3.1\Flight-Manager.Web.Models.pdb
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web.Models\bin\Debug\netcoreapp3.1\Flight-Manager.Web.Models.deps.json
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web.Models\bin\Debug\netcoreapp3.1\Flight-Manager.Web.Models.dll
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web.Models\bin\Debug\netcoreapp3.1\Flight-Manager.Web.Models.pdb
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web.Models\obj\Debug\netcoreapp3.1\Flight-Manager.Web.Models.csprojAssemblyReference.cache
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web.Models\obj\Debug\netcoreapp3.1\Flight-Manager.Web.Models.AssemblyInfoInputs.cache
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web.Models\obj\Debug\netcoreapp3.1\Flight-Manager.Web.Models.AssemblyInfo.cs
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web.Models\obj\Debug\netcoreapp3.1\Flight-Manager.Web.Models.dll
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web.Models\obj\Debug\netcoreapp3.1\Flight-Manager.Web.Models.pdb
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web.Models\bin\Debug\netcoreapp3.1\Flight-Manager.Data.Models.dll
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web.Models\bin\Debug\netcoreapp3.1\Flight-Manager.Data.Models.pdb
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web.Models\obj\Debug\netcoreapp3.1\Flight-Manager.Web.Models.csproj.CopyComplete

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data\\Flight-Manager.Data.csproj": {}
+    "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data\\Flight-Manager.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj": {
+    "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj",
+        "projectUniqueName": "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj",
         "projectName": "Flight-Manager.Data.Models",
-        "projectPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj",
+        "projectPath": "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj",
         "packagesPath": "C:\\Users\\kiril\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\obj\\",
+        "outputPath": "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -71,14 +71,14 @@
         }
       }
     },
-    "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data\\Flight-Manager.Data.csproj": {
+    "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data\\Flight-Manager.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data\\Flight-Manager.Data.csproj",
+        "projectUniqueName": "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data\\Flight-Manager.Data.csproj",
         "projectName": "Flight-Manager.Data",
-        "projectPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data\\Flight-Manager.Data.csproj",
+        "projectPath": "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data\\Flight-Manager.Data.csproj",
         "packagesPath": "C:\\Users\\kiril\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data\\obj\\",
+        "outputPath": "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -97,8 +97,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj": {
-                "projectPath": "C:\\Users\\kiril\\Desktop\\Flight site\\Website\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj"
+              "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj": {
+                "projectPath": "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj"
               }
             }
           }

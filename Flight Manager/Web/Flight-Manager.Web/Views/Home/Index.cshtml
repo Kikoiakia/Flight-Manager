@@ -1,45 +1,113 @@
 ﻿<!DOCTYPE html>
+
+@model Flight_Manager.Web.Models.Flight.FlightIndexViewModel
+
 <html lang="zxx" class="no-js">
 <body>
-    <!-- start banner Area -->
-    <section class="banner-area relative">
-        <div class="overlay overlay-bg"></div>
-        <div class="container">
-            <div class="row fullscreen align-items-center justify-content-between">
-                <div class="col-lg-6 col-md-6 banner-left">
-                    <h6 class="text-white">Away from monotonous life</h6>
-                    <h1 class="text-white">Magical Travel</h1>
-                    <p class="text-white">
-                        Lorem ipsum aenean nam congue posuere porta maecenas nibh iaculis eu orci, vivamus est habitant mi sodales conubia purus quis vulputate lobortis, suscipit vel dapibus fames auctor ipsum varius euismod enim nec.
-                    </p>
-                </div>
-                <div class="col-lg-4 col-md-6 banner-right">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Flights">Check flights</a>
+    <div class="overlay overlay-bg">
+    </div>
+    <div class="container">
+        <div id="_idContainer003" class="Basic-Text-Frame">
+            <table id="table001" class="Basic-Table">
+                <colgroup>
+                    <col class="_idGenTableRowColumn-1" />
+                    <col class="_idGenTableRowColumn-1" />
+                    <col class="_idGenTableRowColumn-1" />
+                    <col class="_idGenTableRowColumn-1" />
+                    <col class="_idGenTableRowColumn-1" />
+                    <col class="_idGenTableRowColumn-1" />
+                    <col class="_idGenTableRowColumn-1" />
+                    <col class="_idGenTableRowColumn-1" />
+                    <col class="_idGenTableRowColumn-1" />
+                </colgroup>
+                <thead>
+                    <tr class="Basic-Table _idGenTableRowColumn-2">
+                        <td class="Basic-Table CellOverride-1">
+                            <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Flight ID</span></p>
+                        </td>
+                        <td class="Basic-Table CellOverride-2">
+                            <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Plane Type</span></p>
+                        </td>
+                        <td class="Basic-Table CellOverride-2">
+                            <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">From</span></p>
+                        </td>
+                        <td class="Basic-Table CellOverride-2">
+                            <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Destination</span></p>
+                        </td>
+                        <td class="Basic-Table CellOverride-2">
+                            <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Departure</span></p>
+                        </td>
+                        <td class="Basic-Table CellOverride-2">
+                            <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Arrival</span></p>
+                        </td>
+                        <td class="Basic-Table CellOverride-2">
+                            <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Bussines Seats Left</span></p>
+                        </td>
+                        <td class="Basic-Table CellOverride-2">
+                            <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Economy Seats Left</span></p>
+                        </td>
+                        <td class="Basic-Table CellOverride-3">
+                            <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Pilot’s Name</span></p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Basic-Table _idGenTableRowColumn-2">
+                        <td class="Basic-Table CellOverride-4"></td>
+                        <td class="Basic-Table CellOverride-5"></td>
+                        <td class="Basic-Table CellOverride-5"></td>
+                        <td class="Basic-Table CellOverride-5"></td>
+                        <td class="Basic-Table CellOverride-5"></td>
+                        <td class="Basic-Table CellOverride-5"></td>
+                        <td class="Basic-Table CellOverride-5"></td>
+                        <td class="Basic-Table CellOverride-5"></td>
+                        <td class="Basic-Table CellOverride-6"></td>
+                    </tr>
+                </tbody>
+                <!--
+                <ul class="pagination">
+                    for (var i = 1; i <= Model.Pager.PagesCount; i++)
+                    {
+                        <li class="page-item (i == Model.Pager.CurrentPage ? "active" : "")">
+                            <a asp-route-Pager.CurrentPage="i" class="page-link">i</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Booking">Book a flight</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+                    }
+                </ul>
+                -->
 
-    <script src="js/vendor/jquery-2.2.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/easing.min.js"></script>
-    <script src="js/hoverIntent.js"></script>
-    <script src="js/superfish.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="js/main.js"></script>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
+
+<!--
+
+                    foreach (var item in Model)
+                    {
+                            <tr class="Basic-Table _idGenTableRowColumn-2">
+                                <td class="Basic-Table CellOverride-4">Html.DisplayFor(modelItem => item.Id) </td>
+                                <td class="Basic-Table CellOverride-5"> Html.DisplayFor(modelItem => item.PlaneModel) </td>
+                                <td class="Basic-Table CellOverride-5"> Html.DisplayFor(modelItem => item.LocationFrom) </td>
+                                <td class="Basic-Table CellOverride-5"> Html.DisplayFor(modelItem => item.LocationTo) </td>
+                                <td class="Basic-Table CellOverride-5"> Html.DisplayFor(modelItem => item.FligtTakeOff) </td>
+                                <td class="Basic-Table CellOverride-5"> Html.DisplayFor(modelItem => item.FlightLanding.Subtract(item.FligtTakeOff).ToString()) </td>
+                                <td class="Basic-Table CellOverride-5"> Html.DisplayFor(modelItem => item.CapacityBuisness) </td>
+                                <td class="Basic-Table CellOverride-5"> Html.DisplayFor(modelItem => item.CapacityNormal) </td>
+                                <td class="Basic-Table CellOverride-6"> Html.DisplayFor(modelItem => item.PilotName) </td>
+                            </tr>
+
+                            <tr class="Basic-Table _idGenTableRowColumn-2">
+                                <td class="Basic-Table CellOverride-7">Html.DisplayFor(modelItem => item.Id) </td>
+                                <td class="Basic-Table CellOverride-8"> Html.DisplayFor(modelItem => item.PlaneModel) </td>
+                                <td class="Basic-Table CellOverride-8"> Html.DisplayFor(modelItem => item.LocationFrom) </td>
+                                <td class="Basic-Table CellOverride-8"> Html.DisplayFor(modelItem => item.LocationTo) </td>
+                                <td class="Basic-Table CellOverride-8"> Html.DisplayFor(modelItem => item.FligtTakeOff) </td>
+                                <td class="Basic-Table CellOverride-8"> Html.DisplayFor(modelItem => item.FlightLanding.Subtract(item.FligtTakeOff).ToString()) </td>
+                                <td class="Basic-Table CellOverride-8"> Html.DisplayFor(modelItem => item.CapacityBuisness) </td>
+                                <td class="Basic-Table CellOverride-8"> Html.DisplayFor(modelItem => item.CapacityNormal) </td>
+                                <td class="Basic-Table CellOverride-9"> Html.DisplayFor(modelItem => item.PilotName) </td>
+                            </tr>
+                        }
+                    }
+    -->

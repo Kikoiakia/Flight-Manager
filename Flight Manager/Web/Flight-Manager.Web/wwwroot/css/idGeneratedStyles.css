@@ -1,0 +1,260 @@
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}
+
+body {
+    -epub-hyphens: auto;
+}
+
+div.Basic-Graphics-Frame {
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+div.Basic-Text-Frame {
+    border-style: solid;
+}
+
+table.Basic-Table {
+    border-collapse: collapse;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: -4px;
+    margin-top: 4px;
+}
+
+td.Basic-Table {
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #000000;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #000000;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #000000;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #000000;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    vertical-align: top;
+}
+
+p.Basic-Paragraph {
+    color: #000000;
+    font-family: "Minion Pro", serif;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    orphans: 1;
+    page-break-after: auto;
+    page-break-before: auto;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    text-transform: none;
+    widows: 1;
+    position: relative;
+    margin: 0px;
+}
+
+td.CellOverride-1 {
+    background-color: #f0c383;
+    border-right-color: #ffffff;
+    border-right-width: 4px;
+    vertical-align: middle;
+}
+
+td.CellOverride-2 {
+    background-color: #f0c383;
+    border-left-color: #ffffff;
+    border-left-width: 4px;
+    border-right-color: #ffffff;
+    border-right-width: 4px;
+    vertical-align: middle;
+}
+
+td.CellOverride-3 {
+    background-color: #f0c383;
+    border-left-color: #ffffff;
+    border-left-width: 4px;
+    vertical-align: middle;
+}
+
+td.CellOverride-4 {
+    background-color: #e1ecdc;
+    border-right-color: #ffffff;
+    border-right-width: 4px;
+    vertical-align: middle;
+}
+
+td.CellOverride-5 {
+    background-color: #e1ecdc;
+    border-left-color: #ffffff;
+    border-left-width: 4px;
+    border-right-color: #ffffff;
+    border-right-width: 4px;
+    vertical-align: middle;
+}
+
+td.CellOverride-6 {
+    background-color: #e1ecdc;
+    border-left-color: #ffffff;
+    border-left-width: 4px;
+    vertical-align: middle;
+}
+
+td.CellOverride-7 {
+    background-color: #c3d9b9;
+    border-right-color: #ffffff;
+    border-right-width: 4px;
+    vertical-align: middle;
+}
+
+td.CellOverride-8 {
+    background-color: #c3d9b9;
+    border-left-color: #ffffff;
+    border-left-width: 4px;
+    border-right-color: #ffffff;
+    border-right-width: 4px;
+    vertical-align: middle;
+}
+
+td.CellOverride-9 {
+    background-color: #c3d9b9;
+    border-left-color: #ffffff;
+    border-left-width: 4px;
+    vertical-align: middle;
+}
+
+p.ParaOverride-1 {
+    text-align: center;
+}
+
+p.ParaOverride-2 {
+    text-align: right;
+}
+
+span.CharOverride-1 {
+    font-family: "Arial Black", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+span.CharOverride-2 {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+span.CharOverride-3 {
+    font-family: "Arial Black", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+col._idGenTableRowColumn-1 {
+    width: 200px;
+}
+
+tr._idGenTableRowColumn-2 {
+    height: 40px;
+}
+
+#_idContainer000 {
+    display: inline-block;
+    height: 100px;
+    position: center;
+    width: 2560px;
+}
+
+#_idContainer001 {
+    display: inline-block;
+    height: 406px;
+    width: 1920px;
+}
+
+#_idContainer004 {
+    -ms-transform: translate(0.000px,0.000px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
+    -ms-transform-origin: 0% 0%;
+    -webkit-transform: translate(0.000px,0.000px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
+    -webkit-transform-origin: 0% 0%;
+    height: 28.80px;
+    left: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    transform: translate(0.000px,0.000px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
+    transform: translate(0.000px,0.000px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
+    transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    width: 89.51px;
+}
+
+#_idContainer005 {
+    display: inline-block;
+    height: 29px;
+    position: relative;
+    width: 90px;
+}
+
+img._idGenObjectAttribute-1 {
+    height: 100.00%;
+    min-width: 100%;
+    width: 100.00%;
+}
+
+div._idGenObjectStyleOverride-1 {
+    background-color: #fff1c5;
+    border-width: 0px;
+}
+
+div._idGenObjectStyleOverride-2 {
+    border-width: 0px;
+}
+
+div._idGenObjectLayout-1 {
+    text-align: center;
+    position: center;
+}
+
+div._Menu {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+ul._User {
+    position: absolute;
+    left: 5px;
+}
+
+ul.Login {
+    postion: absolute;
+    right: 10px;
+}
+
+a._Logo {
+    position: absolute;
+}
+
+li._Logout {
+    position: relative;
+    right: 10px;
+    margin-top: 10px;
+}
