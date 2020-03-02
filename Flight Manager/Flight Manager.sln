@@ -9,13 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{1A13E6F3-F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{87281460-4B47-4E68-91C1-6EA52AADA397}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight-Manager.Web", "Web\Flight-Manager.Web\Flight-Manager.Web.csproj", "{CAFC48AF-DCE7-4899-892A-7DB7C1F10671}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flight-Manager.Web", "Web\Flight-Manager.Web\Flight-Manager.Web.csproj", "{CAFC48AF-DCE7-4899-892A-7DB7C1F10671}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight-Manager.Web.Models", "Web\Flight-Manager.Web.Models\Flight-Manager.Web.Models.csproj", "{FF0BB433-C039-49F7-880A-2345BCC3D179}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flight-Manager.Web.Models", "Web\Flight-Manager.Web.Models\Flight-Manager.Web.Models.csproj", "{FF0BB433-C039-49F7-880A-2345BCC3D179}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight-Manager.Data", "Data\Flight-Manager.Data\Flight-Manager.Data.csproj", "{044BDFDA-FDE8-4063-BE48-2D0D51B29975}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flight-Manager.Data", "Data\Flight-Manager.Data\Flight-Manager.Data.csproj", "{044BDFDA-FDE8-4063-BE48-2D0D51B29975}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight-Manager.Data.Models", "Data\Flight-Manager.Data.Models\Flight-Manager.Data.Models.csproj", "{162C16CC-2608-4EA8-BB36-87E9225597FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flight-Manager.Data.Models", "Data\Flight-Manager.Data.Models\Flight-Manager.Data.Models.csproj", "{162C16CC-2608-4EA8-BB36-87E9225597FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

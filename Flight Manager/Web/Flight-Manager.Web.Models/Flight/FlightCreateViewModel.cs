@@ -5,6 +5,7 @@
     using System.ComponentModel.DataAnnotations;
     public class FlightCreateViewModel
     {
+
         [Required]
         public string LocationFrom { get; set; }
 
@@ -13,18 +14,17 @@
 
         [Required]
         [DataType(DataType.DateTime)]
-        public DateTime FligtTakeOff { get; set; }
+        public DateTime FlightTakeOff { get; set; }
 
         [Required]
-        [DataType(DataType.DateTime)]
-    //  [CompareTo(nameof(FligtTakeOff), ComparisonType.SmallerThan, ErrorMessage = "Landing Date/Type must be after Flight Take Off")]
+        [CompareTo(nameof(FlightTakeOff), ComparisonType.GreaterThanOrEqual, ErrorMessage = "Landing Date/Time must be after Flight Take Off")]
         public DateTime FlightLanding { get; set; }
 
         [Required]
         public string PlaneModel { get; set; }
 
         [Required]
-        public int PlaneId { get; set; }
+        public string PlaneId { get; set; }
 
         [Required]
         public string PilotName { get; set; }

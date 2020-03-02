@@ -1,8 +1,10 @@
 ﻿using Flight_Manager.Data;
 using Flight_Manager.Web.Models;
+using Flight_Manager.Web.Models.Flight;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Flight_Manager.Web.Controllers
@@ -26,21 +28,27 @@ namespace Flight_Manager.Web.Controllers
             await this.roleManager.CreateAsync(nonAdminRole);
             await this.roleManager.CreateAsync(adminRole);
 
-            return View();
+            var model = new FlightIndexViewModel
+            {
+                Items = _context.Flights.Select(f => new FlightViewModel
+                {
+                    Id = f.Id,
+                    LocationFrom = f.LocationFrom,
+                    LocationTo = f.LocationTo,
+                    FlightTakeOff = f.FlightTakeOff,
+                    FlightLanding = f.FlightLanding,
+                    PlaneModel = f.PlaneModel,
+                    PlaneId = f.PlaneId,
+                    PilotName = f.PilotName,
+                    CapacityNormal = f.CapacityNormal,
+                    CapacityBuisness = f.CapacityBuisness
+
+                }).ToList()
+            };
+            return View(model);  
         }
 
-        public IActionResult FlightCreate()
-        {
-            FlightCreateViewModel model = new FlightCreateViewModel();
-
-            return View(model);
-        }
-        public IActionResult Flights()
-        {
-            FlightViewModel model = new FlightViewModel();
-
-            return View(model);
-        }
+ 
 
     }
 }

@@ -2,8 +2,8 @@
 {
     public class FlightType
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
 
-        public int Type { get; set; }
+        public string Type { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace Flight_Manager.Data.Models
 
         public string Surname { get; set; }
 
-        public int PersonalId { get; set; }
+        public string PersonalId { get; set; }
 
         public string Address { get; set; }
 

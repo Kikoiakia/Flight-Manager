@@ -1,0 +1,136 @@
+﻿@page
+@model Flight_Manager.Web.Areas.Identity.Pages.FlightList.IndexModel
+@if (this.User.Identity.IsAuthenticated)
+{
+
+    <h1>Flights</h1>
+
+    <div class="nav-item">
+        <a class="btn btn-info text-white" asp-controller="Flight" asp-action="Create">Create</a>
+    </div>
+    <form method="post">
+        <table id="table001" class="Basic-Table">
+            <colgroup>
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+            </colgroup>
+            <thead>
+                <tr class="Basic-Table _idGenTableRowColumn-2">
+                    <td class="Basic-Table CellOverride-1">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Flight ID</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Plane Type</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Plane Id</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">From</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Destination</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Departure</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Arrival</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Bussines Seats Left</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Economy Seats Left</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Pilot’s Name</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-3">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">CRUD</span></p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    var i = 0;
+                    @foreach (var item in Model.Flights)
+                    {
+                        var arrivalTime = item.FlightLanding.Subtract(item.FlightTakeOff).TotalHours;
+                        if (i % 2 == 0)
+                        {
+                            <tr class="Basic-Table _idGenTableRowColumn-2">
+                                <td class="Basic-Table CellOverride-4">@Html.DisplayFor(modelItem => item.Id)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.PlaneModel)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.PlaneId)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.LocationFrom)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.LocationTo)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.FlightTakeOff)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.FlightLanding)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.CapacityBuisness)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.CapacityNormal)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.PilotName)</td>
+                                <td class="Basic-Table CellOverride-6">
+                                    <a asp-area="Identity" asp-page="/FlightList/Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm text-white">Edit</a>
+                                    <button asp-page-handler="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-sm">Delete</button>
+                                </td>
+                            </tr>
+                            i++;
+                        }
+                        else
+                        {
+                            <tr class="Basic-Table _idGenTableRowColumn-2">
+                                <td class="Basic-Table CellOverride-7">@Html.DisplayFor(modelItem => item.Id)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.PlaneModel)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.PlaneId)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.LocationFrom)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.LocationTo)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.FlightTakeOff)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.FlightLanding)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.CapacityBuisness)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.CapacityNormal)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.PilotName)</td>
+                                <td class="Basic-Table CellOverride-9">
+                                    <a asp-area="Identity" asp-page="/FlightList/Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm text-white">Edit</a>
+                                    <button asp-page-handler="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-sm">Delete</button>
+                                </td>
+                            </tr>
+                            i++;
+                        }
+                    }
+                }
+            </tbody>
+            <!--
+            <ul class="pagination">
+                for (var i = 1; i <= Model.Pager.PagesCount; i++)
+                {
+                    <li class="page-item (i == Model.Pager.CurrentPage ? "active" : "")">
+                        <a asp-route-Pager.CurrentPage="i" class="page-link">i</a>
+                    </li>
+                }
+            </ul>
+            -->
+
+        </table>
+
+        <div>
+            <a asp-action="Index">Back to homepage</a>
+        </div>
+    </form>
+}
+else
+{
+    <div>
+        <h1>You don't have premission to be here</h1>
+        <a asp-action="Index">Back to homepage</a>
+    </div>
+}

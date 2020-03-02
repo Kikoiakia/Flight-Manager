@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Flight_Manager.Data.Migrations
 {
     [DbContext(typeof(FlightDbContext))]
-    [Migration("20200228183427_Initial")]
-    partial class Initial
+    [Migration("20200302211040_Second")]
+    partial class Second
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,10 +23,8 @@ namespace Flight_Manager.Data.Migrations
 
             modelBuilder.Entity("Flight_Manager.Data.Models.Flight", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("CapacityBuisness")
                         .HasColumnType("int");
@@ -37,7 +35,7 @@ namespace Flight_Manager.Data.Migrations
                     b.Property<DateTime>("FlightLanding")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("FligtTakeOff")
+                    b.Property<DateTime>("FlightTakeOff")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("LocationFrom")
@@ -49,8 +47,8 @@ namespace Flight_Manager.Data.Migrations
                     b.Property<string>("PilotName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PlaneId")
-                        .HasColumnType("int");
+                    b.Property<string>("PlaneId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PlaneModel")
                         .HasColumnType("nvarchar(max)");
@@ -62,13 +60,11 @@ namespace Flight_Manager.Data.Migrations
 
             modelBuilder.Entity("Flight_Manager.Data.Models.FlightType", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("Type")
-                        .HasColumnType("int");
+                    b.Property<string>("Type")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -117,8 +113,8 @@ namespace Flight_Manager.Data.Migrations
                     b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PersonalId")
-                        .HasColumnType("int");
+                    b.Property<string>("PersonalId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("nvarchar(max)");
@@ -154,13 +150,11 @@ namespace Flight_Manager.Data.Migrations
 
             modelBuilder.Entity("Flight_Manager.Data.Models.Reservation", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<int?>("FlightTypeId")
-                        .HasColumnType("int");
+                    b.Property<string>("FlightTypeId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("MiddleName")
                         .HasColumnType("nvarchar(max)");
@@ -171,8 +165,11 @@ namespace Flight_Manager.Data.Migrations
                     b.Property<string>("Nationality")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PersonalId")
-                        .HasColumnType("int");
+                    b.Property<string>("PersonalId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PlaneId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Surname")
                         .HasColumnType("nvarchar(max)");

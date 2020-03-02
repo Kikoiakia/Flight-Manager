@@ -42,7 +42,7 @@ namespace Flight_Manager.Data.Migrations
                     AccessFailedCount = table.Column<int>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     Surname = table.Column<string>(nullable: true),
-                    PersonalId = table.Column<int>(nullable: false),
+                    PersonalId = table.Column<string>(nullable: true),
                     Address = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -54,11 +54,10 @@ namespace Flight_Manager.Data.Migrations
                 name: "Flights",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<string>(nullable: false),
                     LocationFrom = table.Column<string>(nullable: true),
                     LocationTo = table.Column<string>(nullable: true),
-                    FligtTakeOff = table.Column<DateTime>(nullable: false),
+                    FlightTakeOff = table.Column<DateTime>(nullable: false),
                     FlightLanding = table.Column<DateTime>(nullable: false),
                     PlaneModel = table.Column<string>(nullable: true),
                     PlaneId = table.Column<int>(nullable: false),
@@ -75,9 +74,8 @@ namespace Flight_Manager.Data.Migrations
                 name: "FlightTypes",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Type = table.Column<int>(nullable: false)
+                    Id = table.Column<string>(nullable: false),
+                    Type = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -194,15 +192,15 @@ namespace Flight_Manager.Data.Migrations
                 name: "Reservations",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<string>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     MiddleName = table.Column<string>(nullable: true),
                     Surname = table.Column<string>(nullable: true),
                     PersonalId = table.Column<int>(nullable: false),
                     Telephone = table.Column<string>(nullable: true),
                     Nationality = table.Column<string>(nullable: true),
-                    FlightTypeId = table.Column<int>(nullable: true)
+                    FlightTypeId = table.Column<string>(nullable: true),
+                    PlaneId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

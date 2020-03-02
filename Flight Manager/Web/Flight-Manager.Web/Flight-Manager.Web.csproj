@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Shared\Error.cshtml" />
+    <None Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Views\Shared\_LoginPartial.cshtml" />
+    <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
     <None Include="wwwroot\css\.DS_Store" />
     <None Include="wwwroot\css\bootstrap.map" />
     <None Include="wwwroot\css\main.map" />
@@ -147,6 +152,11 @@
     <ProjectReference Include="..\..\Data\Flight-Manager.Data.Models\Flight-Manager.Data.Models.csproj" />
     <ProjectReference Include="..\..\Data\Flight-Manager.Data\Flight-Manager.Data.csproj" />
     <ProjectReference Include="..\Flight-Manager.Web.Models\Flight-Manager.Web.Models.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Views\Reservations\" />
   </ItemGroup>
 
 </Project>

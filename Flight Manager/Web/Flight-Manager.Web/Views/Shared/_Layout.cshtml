@@ -41,7 +41,7 @@
                         @if (this.User.Identity.IsAuthenticated)
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Flights">Flights</a>
+                                <a class="nav-link text-dark" asp-area="Identity" asp-page="/FlightList/Index">Flights</a>
                             </li>
                         }
                     </ul>
@@ -50,7 +50,7 @@
                         @if (this.User.IsInRole("Admin"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Users">Users</a>
+                                <a class="nav-link text-dark" asp-area="Identity" asp-page="/UserList/Index">Users</a>
                             </li>
                         }
                     </ul>
@@ -76,7 +76,7 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 
-    <footer class="container-fluid footer text-muted text-center">
+    <footer class="container footer text-muted text-center">
         &copy; 2020 - Flight_Manager.Web
     </footer>
 </body>

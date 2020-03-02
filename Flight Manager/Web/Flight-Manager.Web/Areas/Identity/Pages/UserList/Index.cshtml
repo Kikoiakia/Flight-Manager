@@ -1,0 +1,126 @@
+﻿@page
+@model Flight_Manager.Web.Areas.Identity.Pages.UserList.IndexModel
+@if (this.User.IsInRole("Admin"))
+{
+    <h1>Users</h1>
+
+    <form method="post">
+        <table id="table001" class="Basic-Table">
+            <colgroup>
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+                <col class="_idGenTableRowColumn-1" />
+            </colgroup>
+            <thead>
+                <tr class="Basic-Table _idGenTableRowColumn-2">
+                    <td class="Basic-Table CellOverride-1">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">User Id</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Name</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Surname</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Personal Id</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Address</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">PhoneNumber</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Username</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Email</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-2">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Password hash</span></p>
+                    </td>
+                    <td class="Basic-Table CellOverride-3">
+                        <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">CRUD</span></p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    var i = 0;
+                    @foreach (var item in Model.Users)
+                    {
+                        if (i % 2 == 0)
+                        {
+                            <tr class="Basic-Table _idGenTableRowColumn-2">
+                                <td class="Basic-Table CellOverride-4">@Html.DisplayFor(modelItem => item.Id)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.Name)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.Surname)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.PersonalId)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.Address)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.PhoneNumber)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.UserName)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.Email)</td>
+                                <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.PasswordHash)</td>
+                                <td class="Basic-Table CellOverride-6">
+                                    <a asp-area="Identity" asp-page="/UserList/Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm text-white">Edit</a>
+                                    <button asp-page-handler="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-sm">Delete</button>
+                                </td>
+                            </tr>
+                            i++;
+                        }
+                        else
+                        {
+                            <tr class="Basic-Table _idGenTableRowColumn-2">
+                                <td class="Basic-Table CellOverride-7">@Html.DisplayFor(modelItem => item.Id)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.Name)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.Surname)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.PersonalId)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.Address)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.PhoneNumber)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.UserName)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.Email)</td>
+                                <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.PasswordHash)</td>
+                                <td class="Basic-Table CellOverride-9">
+                                    <a asp-area="Identity" asp-page="UserList/Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm text-white">Edit</a>
+                                    <button asp-page-handler="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-sm">Delete</button>
+                                </td>
+                            </tr>
+                            i++;
+                        }
+                    }
+                }
+            </tbody>
+            <!--
+            <ul class="pagination">
+                for (var i = 1; i <= Model.Pager.PagesCount; i++)
+                {
+                    <li class="page-item (i == Model.Pager.CurrentPage ? "active" : "")">
+                        <a asp-route-Pager.CurrentPage="i" class="page-link">i</a>
+                    </li>
+                }
+            </ul>
+            -->
+
+        </table>
+
+        <div>
+            <a asp-action="Index">Back to homepage</a>
+        </div>
+    </form>
+
+}
+else
+{
+    <div>
+        <h1>You don't have premission to be here</h1>
+        <a asp-action="Index">Back to homepage</a>
+    </div>
+}

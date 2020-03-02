@@ -46,7 +46,10 @@
 
 
             [Display(Name = "PersonalId")]
-            public int PersonalId { get; set; }
+            [MinLength(10)]
+            [StringLength(10, ErrorMessage = "Personal Id must be 10 characters long")]
+            [RegularExpression(@"^[0-9]*$", ErrorMessage = "Personal Id must be only numbers")]
+            public string PersonalId { get; set; }
 
             [Required]
             [Display(Name = "Address")]

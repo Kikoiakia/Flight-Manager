@@ -334,8 +334,6 @@ E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web
 E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Flight-Manager.Web.csproj.CopyComplete
 E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Flight-Manager.Web.dll
 E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Flight-Manager.Web.pdb
-E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Flights.cshtml.g.cs
-E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\FlightCreate.cshtml.g.cs
 E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\bin\Debug\netcoreapp3.1\AspNetCore.CustomValidation.dll
 E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Flight-Manager.Web.MvcApplicationPartsAssemblyInfo.cs
 E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Flight-Manager.Web.MvcApplicationPartsAssemblyInfo.cache
@@ -346,3 +344,9 @@ E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web
 E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\bin\Debug\netcoreapp3.1\System.Web.WebPages.Razor.dll
 E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\bin\Debug\netcoreapp3.1\System.Web.WebPages.dll
 E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\FlightList\Edit.cshtml.g.cs
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\FlightList\Index.cshtml.g.cs
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Razor\Views\Flight\Create.cshtml.g.cs
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\FlightList\Info.cshtml.g.cs
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\UserList\Index.cshtml.g.cs
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\UserList\Edit.cshtml.g.cs
