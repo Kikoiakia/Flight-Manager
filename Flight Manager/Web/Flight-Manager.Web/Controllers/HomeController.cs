@@ -1,6 +1,7 @@
 ﻿using Flight_Manager.Data;
 using Flight_Manager.Web.Models;
 using Flight_Manager.Web.Models.Flight;
+using Flight_Manager.Web.Models.Reservations;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -48,7 +49,9 @@ namespace Flight_Manager.Web.Controllers
             return View(model);  
         }
 
- 
-
+        public ActionResult Reservate(string id)
+        {
+            return RedirectToAction("Reservate", "Reservation", id);
+        }
     }
 }

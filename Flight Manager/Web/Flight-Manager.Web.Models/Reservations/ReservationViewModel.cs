@@ -22,7 +22,7 @@
 
         public string Nationality { get; set; }
 
-        public FlightType FlightType { get; set; }
+        public string FlightType { get; set; }
 
         public string PlaneId { get; set; }
 

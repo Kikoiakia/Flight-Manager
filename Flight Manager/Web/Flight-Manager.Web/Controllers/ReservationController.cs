@@ -1,6 +1,7 @@
 ﻿namespace Flight_Manager.Web.Controllers
 {
     using System;
+    using System.Linq;
     using System.Threading.Tasks;
     using Flight_Manager.Data;
     using Flight_Manager.Data.Models;
@@ -9,9 +10,10 @@
     public class ReservationController : Controller
     {
         private readonly FlightDbContext _context;
-        public IActionResult Index()
+        public IActionResult Reservate()
         {
-            return View();
+            var model = new ReservationCreateViewModel();
+            return View(model);
         }
 
         [HttpGet]
@@ -36,7 +38,7 @@
                         PersonalId = reservation.PersonalId,
                         Telephone = reservation.Telephone,
                         Nationality = reservation.Nationality,
-                        FlightType = reservation.FlightType,
+                        FlightTypeId = _context.FlightTypes.FirstOrDefault(f => f.Type == reservation.FlightType).Id,
                         PlaneId = reservation.PlaneId
                     };
                     _context.Add(_reservation);

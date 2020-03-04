@@ -11,11 +11,11 @@ namespace Flight_Manager.Web.Areas.Identity.Pages.UserList
     public class EditModel : PageModel
     {
 
-        private readonly FlightDbContext context;
+        private readonly FlightDbContext _context;
 
         public EditModel(FlightDbContext context)
         {
-            this.context = context;
+            _context = context;
         }
 
         [BindProperty]
@@ -31,7 +31,6 @@ namespace Flight_Manager.Web.Areas.Identity.Pages.UserList
 
             [Required]
             public string Surname { get; set; }
-
 
             [MinLength(10)]
             [StringLength(10, ErrorMessage = "Personal Id must be 10 characters long")]
@@ -51,12 +50,11 @@ namespace Flight_Manager.Web.Areas.Identity.Pages.UserList
 
             [Required]
             public string Username { get; set; }
-
         }
 
-        public async Task OnGet(string id)
+        public async void OnGet(string id)
         {
-            var UserFromDb = await context.Users.FindAsync(id);
+            var UserFromDb = await _context.Users.FindAsync(id);
             FlightUser = new FlightUserModel()
             {
                 Id = UserFromDb.Id,
@@ -74,7 +72,7 @@ namespace Flight_Manager.Web.Areas.Identity.Pages.UserList
         {
             if (ModelState.IsValid)
             {
-                var UserFromDb = await context.Users.FindAsync(FlightUser.Id);
+                var UserFromDb = await _context.Users.FindAsync(FlightUser.Id);
                 UserFromDb.Id = FlightUser.Id;
                 UserFromDb.Name = FlightUser.Name;
                 UserFromDb.Surname = FlightUser.Surname;
@@ -84,7 +82,7 @@ namespace Flight_Manager.Web.Areas.Identity.Pages.UserList
                 UserFromDb.UserName = FlightUser.Username;
                 UserFromDb.Email = FlightUser.Email;
 
-                await context.SaveChangesAsync();
+                await _context.SaveChangesAsync();
 
                 return Redirect("/Identity/UserList");
             }

@@ -1,0 +1,72 @@
+﻿@model Flight_Manager.Web.Models.Reservations.ReservationCreateViewModel
+
+<h1>Reservate</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="Reservation" asp-action="Create">
+            <input type="hidden" asp-for="PlaneId" />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MiddleName" class="control-label"></label>
+                <input asp-for="MiddleName" class="form-control" />
+                <span asp-validation-for="MiddleName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Surname" class="control-label"></label>
+                <input asp-for="Surname" class="form-control ui-datepicker" />
+                <span asp-validation-for="Surname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PersonalId" class="control-label"></label>
+                <input asp-for="PersonalId" class="form-control ui-datepicker" />
+                <span asp-validation-for="PersonalId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telephone" class="control-label"></label>
+                <input asp-for="Telephone" class="form-control" />
+                <span asp-validation-for="Telephone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nationality" class="control-label"></label>
+                <input asp-for="Nationality" class="form-control" />
+                <span asp-validation-for="Nationality" class="text-danger"></span>
+            </div>
+            <div>
+                <h4 class="text-center text-secondary">Flight Type</h4>
+                <hr class="hr-2 bg-secondary w-75  mt-3" />
+                <div class="free-holder mt-3 d-flex justify-content-lg-around">
+                    <div class="form-check form-check-inline m-1">
+                        <input class="form-check-input" type="radio" name="Type" id="economy" value="Economy Class">
+                        <label class="form-check-label" asp-for="TypeName">Economy Class</label>
+                    </div>
+                    <div class="form-check form-check-inline m-1">
+                        <input class="form-check-input" type="radio" name="Type" id="buisness" value="Buisness Class">
+                        <label class="form-check-label" asp-for="TypeName">Buisness Class</label>
+                    </div>
+                </div>
+                <hr class="hr-2 bg-dark w-75 mt-3" />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to homepage</a>
+</div>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script type="text/javascript" src="~/lib/aspnetcore-custom-validation/aspnetcore-custom-validation.min.js"></script>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

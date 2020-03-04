@@ -15,7 +15,7 @@
 
         public string Nationality { get; set; }
 
-        public FlightType FlightType { get; set; }
+        public string FlightTypeId { get; set; }
 
         public string PlaneId { get; set; }
     }

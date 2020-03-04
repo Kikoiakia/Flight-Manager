@@ -2,7 +2,9 @@
 {
     using Flight_Manager.Data.Models;
     using System;
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.Web.Mvc;
 
     public class ReservationCreateViewModel
     {
@@ -25,7 +27,7 @@
         public string Nationality { get; set; }
 
         [Required]
-        public FlightType FlightType { get; set; }
+        public string TypeName { get; set; }
 
         [Required]
         [Range(1, 900)]

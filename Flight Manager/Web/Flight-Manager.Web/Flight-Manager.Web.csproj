@@ -154,9 +154,4 @@
     <ProjectReference Include="..\Flight-Manager.Web.Models\Flight-Manager.Web.Models.csproj" />
   </ItemGroup>
 
-
-  <ItemGroup>
-    <Folder Include="Views\Reservations\" />
-  </ItemGroup>
-
 </Project>

@@ -36,10 +36,10 @@ namespace Flight_Manager.Web.Areas.Identity.Pages.FlightList
 
             [Required]
             [DataType(DataType.DateTime)]
-            public DateTime FligtTakeOff { get; set; }
+            public DateTime FlightTakeOff { get; set; }
 
             [Required]
-            [CompareTo(nameof(FligtTakeOff), ComparisonType.GreaterThanOrEqual, ErrorMessage = "Landing Date/Time must be after Flight Take Off")]
+            [CompareTo(nameof(FlightTakeOff), ComparisonType.GreaterThanOrEqual, ErrorMessage = "Landing Date/Time must be after Flight Take Off")]
             public DateTime FlightLanding { get; set; }
 
             [Required]
@@ -60,6 +60,7 @@ namespace Flight_Manager.Web.Areas.Identity.Pages.FlightList
             public int CapacityBuisness { get; set; }
 
         }
+
         public async Task OnGet(string id)
         {
             var FlightFromDb = await context.Flights.FindAsync(id);
@@ -69,7 +70,7 @@ namespace Flight_Manager.Web.Areas.Identity.Pages.FlightList
                 CapacityBuisness = FlightFromDb.CapacityBuisness,
                 CapacityNormal = FlightFromDb.CapacityNormal,
                 FlightLanding = FlightFromDb.FlightLanding,
-                FligtTakeOff = FlightFromDb.FlightTakeOff,
+                FlightTakeOff = FlightFromDb.FlightTakeOff,
                 LocationFrom = FlightFromDb.LocationFrom,
                 LocationTo = FlightFromDb.LocationTo,
                 PilotName = FlightFromDb.PilotName,
@@ -90,7 +91,7 @@ namespace Flight_Manager.Web.Areas.Identity.Pages.FlightList
                 FlightFromDb.CapacityBuisness = Flight.CapacityBuisness;
                 FlightFromDb.CapacityNormal = Flight.CapacityNormal;
                 FlightFromDb.FlightLanding = Flight.FlightLanding;
-                FlightFromDb.FlightTakeOff = Flight.FligtTakeOff;
+                FlightFromDb.FlightTakeOff = Flight.FlightTakeOff;
                 FlightFromDb.LocationFrom = Flight.LocationFrom;
                 FlightFromDb.LocationTo = Flight.LocationTo;
                 FlightFromDb.PilotName = Flight.PilotName;

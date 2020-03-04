@@ -10,7 +10,6 @@ namespace Flight_Manager.Web.Areas.Identity.Pages.UserList
 
     public class IndexModel : PageModel
     {
-
         private readonly FlightDbContext context;
         public IndexModel(FlightDbContext context)
         {

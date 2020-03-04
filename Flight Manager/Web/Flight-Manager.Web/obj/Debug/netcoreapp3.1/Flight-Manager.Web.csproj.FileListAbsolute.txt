@@ -350,3 +350,4 @@ E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web
 E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\FlightList\Info.cshtml.g.cs
 E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\UserList\Index.cshtml.g.cs
 E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\UserList\Edit.cshtml.g.cs
+E:\work\Flight_site\Website\Flight-Manager\Flight Manager\Web\Flight-Manager.Web\obj\Debug\netcoreapp3.1\Razor\Views\Reservation\Reservate.cshtml.g.cs

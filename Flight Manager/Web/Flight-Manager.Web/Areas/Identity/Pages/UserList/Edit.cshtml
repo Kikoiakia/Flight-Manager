@@ -1,59 +1,74 @@
 ﻿@page
 @model Flight_Manager.Web.Areas.Identity.Pages.UserList.EditModel
+@if(this.User.IsInRole("Admin"))
+{
 
+    <h1>Edit User</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <form method="post">
+                <input type="hidden" asp-for="FlightUser.Id" />
+                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                <div class="form-group">
+                    <label asp-for="FlightUser.Name" class="control-label"></label>
+                    <input asp-for="FlightUser.Name" class="form-control" />
+                    <span asp-validation-for="FlightUser.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FlightUser.Surname" class="control-label"></label>
+                    <input asp-for="FlightUser.Surname" class="form-control" />
+                    <span asp-validation-for="FlightUser.Surname" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FlightUser.PersonalId" class="control-label"></label>
+                    <input asp-for="FlightUser.PersonalId" class="form-control ui-datepicker" />
+                    <span asp-validation-for="FlightUser.PersonalId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FlightUser.Address" class="control-label"></label>
+                    <input asp-for="FlightUser.Address" class="form-control ui-datepicker" />
+                    <span asp-validation-for="FlightUser.Address" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FlightUser.PhoneNumber" class="control-label"></label>
+                    <input asp-for="FlightUser.PhoneNumber" class="form-control" />
+                    <span asp-validation-for="FlightUser.PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FlightUser.Email" class="control-label"></label>
+                    <input asp-for="FlightUser.Email" class="form-control" />
+                    <span asp-validation-for="FlightUser.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FlightUser.Username" class="control-label"></label>
+                    <input asp-for="FlightUser.Username" class="form-control" />
+                    <span asp-validation-for="FlightUser.Username" class="text-danger"></span>
+                </div>
 
-<h1>Edit User</h1>
-<div class="row">
-    <div class="col-md-4">
-        <form method="post">
-            <input type="hidden" asp-for="FlightUser.Id" />
-            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
-            <div class="form-group">
-                <label asp-for="FlightUser.Name" class="control-label"></label>
-                <input asp-for="FlightUser.Name" class="form-control" />
-                <span asp-validation-for="FlightUser.Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FlightUser.Surname" class="control-label"></label>
-                <input asp-for="FlightUser.Surname" class="form-control" />
-                <span asp-validation-for="FlightUser.Surname" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FlightUser.PersonalId" class="control-label"></label>
-                <input asp-for="FlightUser.PersonalId" class="form-control"/>
-                <span asp-validation-for="FlightUser.PersonalId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FlightUser.Address" class="control-label"></label>
-                <input asp-for="FlightUser.Address" class="form-control" />
-                <span asp-validation-for="FlightUser.Address" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FlightUser.Email" class="control-label"></label>
-                <input asp-for="FlightUser.Email" class="form-control" />
-                <span asp-validation-for="FlightUser.Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FlightUser.Username" class="control-label"></label>
-                <input asp-for="FlightUser.Username" class="form-control" />
-                <span asp-validation-for="FlightUser.Username" class="text-danger"></span>
-            </div>
-
-            <div class="form-group">
-                <input type="submit" value="Update" class="btn btn-primary" />
-            </div>
-        </form>
+                <div class="form-group">
+                    <input type="submit" value="Update" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to homepage</a>
-</div>
-<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-<script type="text/javascript" src="~/lib/aspnetcore-custom-validation/aspnetcore-custom-validation.min.js"></script>
+    <div>
+        <a asp-action="Index">Back to homepage</a>
+    </div>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script type="text/javascript" src="~/lib/aspnetcore-custom-validation/aspnetcore-custom-validation.min.js"></script>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
 }
-s
+else
+{
+
+    <div>
+        <h1>You don't have premission to be here</h1>
+        <a asp-action="Index">Back to homepage</a>
+    </div>
+
+}
