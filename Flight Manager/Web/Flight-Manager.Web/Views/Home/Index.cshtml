@@ -59,8 +59,7 @@
                         {
                             var hours = item.FlightLanding.Subtract(item.FlightTakeOff).Hours.ToString();
                             var minutes = item.FlightLanding.Subtract(item.FlightTakeOff).Minutes.ToString();
-                            var seconds = item.FlightLanding.Subtract(item.FlightTakeOff).Seconds.ToString();
-                            var arrivalTime = $"{hours} Hours {minutes} Minutes {seconds} Seconds";
+                            var arrivalTime = $"{hours} Hours {minutes} Minutes";
                             if (i % 2 == 0)
                             {
                                 <tr class="Basic-Table _idGenTableRowColumn-2">
@@ -74,7 +73,7 @@
                                     <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => item.PilotName)</td>
                                     <td class="Basic-Table CellOverride-6">
                                         <a asp-area="Identity" asp-page="/FlightList/Info" asp-route-id="@item.Id" class="btn btn-warning btn-sm text-black">Info</a>
-                                        <a asp-controller="Home" asp-action="Reservate" asp-route-id="@item.Id" class="btn btn-success btn-sm text-black">Click here</a>
+                                        <a asp-controller="Reservation" asp-action="Create" asp-route-id="@item.Id" class="btn btn-success btn-sm text-black">Click here</a>
                                     </td>
 
                                 </tr>
@@ -87,13 +86,13 @@
                                     <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.LocationFrom)</td>
                                     <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.LocationTo)</td>
                                     <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.FlightTakeOff)</td>
-                                    <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => arrivalTime) Hours</td>
+                                    <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => arrivalTime)</td>
                                     <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.CapacityBuisness)</td>
                                     <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.CapacityNormal)</td>
                                     <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => item.PilotName)</td>
                                     <td class="Basic-Table CellOverride-9">
                                         <a asp-area="Identity" asp-page="/FlightList/Info" asp-route-id="@item.Id" class="btn btn-warning btn-sm text-black">Info</a>
-                                        <a asp-controller="Home" asp-action="Reservate" asp-route-id="@item.Id" class="btn btn-success btn-sm text-black">Click here</a>
+                                        <a asp-controller="Reservation" asp-action="Create" asp-route-id="@item.Id" class="btn btn-success btn-sm text-black">Click here</a>
                                     </td>
                                 </tr>
                                 i++;

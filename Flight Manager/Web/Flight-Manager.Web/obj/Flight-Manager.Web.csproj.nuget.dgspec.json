@@ -180,6 +180,9 @@
             "projectReferences": {
               "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj": {
                 "projectPath": "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data.Models\\Flight-Manager.Data.Models.csproj"
+              },
+              "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data\\Flight-Manager.Data.csproj": {
+                "projectPath": "E:\\work\\Flight_site\\Website\\Flight-Manager\\Flight Manager\\Data\\Flight-Manager.Data\\Flight-Manager.Data.csproj"
               }
             }
           }

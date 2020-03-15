@@ -1,7 +1,7 @@
 ﻿@page
 @model Flight_Manager.Web.Areas.Identity.Pages.FlightList.InfoModel
 @{
-
+    <h1>Flight</h1>
     <table id="table001" class="Basic-Table">
         <colgroup>
             <col class="_idGenTableRowColumn-1" />
@@ -43,17 +43,17 @@
         </thead>
         <tbody>
             @{
-                        <tr class="Basic-Table _idGenTableRowColumn-2">
-                            <td class="Basic-Table CellOverride-4">@Html.DisplayFor(modelItem => Model.Flight.PlaneModel)</td>
-                            <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => Model.Flight.LocationFrom)</td>
-                            <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => Model.Flight.LocationTo)</td>
-                            <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => Model.Flight.FlightTakeOff)</td>
-                            <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => Model.Flight.FlightLanding)</td>
-                            <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => Model.Flight.CapacityBuisness)</td>
-                            <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => Model.Flight.CapacityNormal)</td>
-                            <td class="Basic-Table CellOverride-6">@Html.DisplayFor(modelItem => Model.Flight.PilotName)</td>
-                        </tr>
-                }
+                <tr class="Basic-Table _idGenTableRowColumn-2">
+                    <td class="Basic-Table CellOverride-4">@Html.DisplayFor(modelItem => Model.Flight.PlaneModel)</td>
+                    <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => Model.Flight.LocationFrom)</td>
+                    <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => Model.Flight.LocationTo)</td>
+                    <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => Model.Flight.FlightTakeOff)</td>
+                    <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => Model.Flight.FlightLanding)</td>
+                    <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => Model.Flight.CapacityBuisness)</td>
+                    <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => Model.Flight.CapacityNormal)</td>
+                    <td class="Basic-Table CellOverride-6">@Html.DisplayFor(modelItem => Model.Flight.PilotName)</td>
+                </tr>
+            }
         </tbody>
         <!--
         <ul class="pagination">
@@ -67,6 +67,95 @@
         -->
 
     </table>
+    <h2>Passengers</h2>
+    <table id="table001" class="Basic-Table">
+        <colgroup>
+            <col class="_idGenTableRowColumn-1" />
+            <col class="_idGenTableRowColumn-1" />
+            <col class="_idGenTableRowColumn-1" />
+            <col class="_idGenTableRowColumn-1" />
+            <col class="_idGenTableRowColumn-1" />
+            <col class="_idGenTableRowColumn-1" />
+        </colgroup>
+        <thead>
+            <tr class="Basic-Table _idGenTableRowColumn-2">
+                <td class="Basic-Table CellOverride-1">
+                    <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Name</span></p>
+                </td>
+                <td class="Basic-Table CellOverride-2">
+                    <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Middle name</span></p>
+                </td>
+                <td class="Basic-Table CellOverride-2">
+                    <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Surname</span></p>
+                </td>
+                <td class="Basic-Table CellOverride-2">
+                    <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Telephone</span></p>
+                </td>
+                <td class="Basic-Table CellOverride-2">
+                    <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Nationality</span></p>
+                </td>
+                <td class="Basic-Table CellOverride-3">
+                    <p class="Basic-Paragraph ParaOverride-1"><span class="CharOverride-2">Flight Type</span></p>
+                </td>
+
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                var i = 0;
+                List<FlightType> flightTypes = new List<FlightType>();
+                foreach (var flightType in Model.FlightType)
+                {
+                    flightTypes.Add(flightType);
+                }
+
+                foreach (var reservation in Model.Reservations)
+                {
+
+                    var flightType = flightTypes.FirstOrDefault(x => x.Id == reservation.FlightTypeId).Type;
+
+                    if (i % 2 == 0)
+                    {
+                        <tr class="Basic-Table _idGenTableRowColumn-2">
+                            <td class="Basic-Table CellOverride-4">@Html.DisplayFor(modelItem => reservation.Name)</td>
+                            <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => reservation.MiddleName)</td>
+                            <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => reservation.Surname)</td>
+                            <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => reservation.Telephone)</td>
+                            <td class="Basic-Table CellOverride-5">@Html.DisplayFor(modelItem => reservation.Nationality)</td>
+                            <td class="Basic-Table CellOverride-6">@Html.DisplayFor(modelItem => flightType)</td>
+                        </tr>
+                        i++;
+                    }
+                    else
+                    {
+                        <tr class="Basic-Table _idGenTableRowColumn-2">
+                            <td class="Basic-Table CellOverride-7">@Html.DisplayFor(modelItem => reservation.Name)</td>
+                            <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => reservation.MiddleName)</td>
+                            <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => reservation.Surname)</td>
+                            <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => reservation.Telephone)</td>
+                            <td class="Basic-Table CellOverride-8">@Html.DisplayFor(modelItem => reservation.Nationality)</td>
+                            <td class="Basic-Table CellOverride-9">@Html.DisplayFor(modelItem => flightType)</td>
+                        </tr>
+                        i++;
+                    }
+
+                }
+
+            }
+        </tbody>
+        <!--
+        <ul class="pagination">
+            for (var i = 1; i <= Model.Pager.PagesCount; i++)
+            {
+                <li class="page-item (i == Model.Pager.CurrentPage ? "active" : "")">
+                    <a asp-route-Pager.CurrentPage="i" class="page-link">i</a>
+                </li>
+            }
+        </ul>
+        -->
+
+    </table>
+
 
     <div>
         <a asp-action="Index">Back to homepage</a>

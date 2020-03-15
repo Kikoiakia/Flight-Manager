@@ -2382,6 +2382,7 @@
       "Flight-Manager.Web.Models/1.0.0": {
         "dependencies": {
           "AspNetCore.CustomValidation": "1.4.0",
+          "Flight-Manager.Data": "1.0.0",
           "Flight-Manager.Data.Models": "1.0.0",
           "Microsoft.AspNet.Mvc": "5.2.7",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0"

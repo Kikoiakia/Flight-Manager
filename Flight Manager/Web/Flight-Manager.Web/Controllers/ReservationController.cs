@@ -10,41 +10,84 @@
     public class ReservationController : Controller
     {
         private readonly FlightDbContext _context;
-        public IActionResult Reservate()
+
+        public ReservationController(FlightDbContext context)
         {
-            var model = new ReservationCreateViewModel();
+            _context = context;
+        }
+
+        public IActionResult Reservate(string id)
+        {
+            var model = new ReservationCreateViewModel()
+            {
+                PlaneId = id
+            };
             return View(model);
         }
 
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult Create(string id)
         {
-            return View();
+            var model = new ReservationCreateViewModel()
+            {
+                PlaneId = id
+            };
+            return View(model);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(ReservationViewModel model)
+        public async Task<IActionResult> Create(ReservationCreateViewModel model)
         {
             if (ModelState.IsValid)
             {
-                foreach (var reservation in model.Reservations)
+
+                Reservation _reservation = new Reservation
                 {
-                    Reservation _reservation = new Reservation
+                    Id = Guid.NewGuid().ToString(),
+                    Name = model.Name,
+                    MiddleName = model.MiddleName,
+                    Surname = model.Surname,
+                    PersonalId = model.PersonalId,
+                    Telephone = model.Telephone,
+                    Nationality = model.Nationality,
+                    FlightTypeId = _context.FlightTypes.FirstOrDefault(f => f.Type == model.TypeName).Id,
+                    PlaneId = model.PlaneId
+                };
+
+                var CapacityBuisness = _context.Flights.FirstOrDefault(f => f.Id == model.PlaneId).CapacityBuisness;
+                var CapacityNormal = _context.Flights.FirstOrDefault(f => f.Id == model.PlaneId).CapacityNormal;
+
+
+                if (model.TypeName == "Buisness Class")
+                {
+                    if (--CapacityBuisness < 0)
                     {
-                        Id = Guid.NewGuid().ToString(),
-                        Name = reservation.Name,
-                        MiddleName = reservation.MiddleName,
-                        Surname = reservation.Surname,
-                        PersonalId = reservation.PersonalId,
-                        Telephone = reservation.Telephone,
-                        Nationality = reservation.Nationality,
-                        FlightTypeId = _context.FlightTypes.FirstOrDefault(f => f.Type == reservation.FlightType).Id,
-                        PlaneId = reservation.PlaneId
-                    };
-                    _context.Add(_reservation);
+                        ViewBag.Message = $"No more seats left in the Buisness Class";
+
+                        return View(model);
+                    }
+
+                    _context.Flights.FirstOrDefault(f => f.Id == model.PlaneId).CapacityBuisness--;
                     await _context.SaveChangesAsync();
                 }
-               
+
+                else
+                {
+                    if (--CapacityNormal < 0)
+                    {
+                        ViewBag.Message = $"No more seats left in the Economy Class";
+
+                        return View(model);
+                    }
+
+                    _context.Flights.FirstOrDefault(f => f.Id == model.PlaneId).CapacityNormal--;
+                    await _context.SaveChangesAsync();
+                }
+
+                _context.Add(_reservation);
+                await _context.SaveChangesAsync();
+
+
                 return Redirect("/");
             }
 

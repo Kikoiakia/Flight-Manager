@@ -1,6 +1,5 @@
 ﻿namespace Flight_Manager.Web.Models.Reservations
 {
-    using Flight_Manager.Data.Models;
     using System.Collections.Generic;
 
     public class ReservationViewModel

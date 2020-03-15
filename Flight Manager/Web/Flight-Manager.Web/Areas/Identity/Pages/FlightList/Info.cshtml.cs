@@ -16,9 +16,17 @@ namespace Flight_Manager.Web.Areas.Identity.Pages.FlightList
         public InfoModel(FlightDbContext context)
         {
             this.context = context;
+            FlightType = new List<FlightType>();
+            foreach (var flightType in context.FlightTypes)
+            {
+                FlightType.Add(flightType);
+            }
+            
         }
         public Flight Flight { get; set; }
         public List<Reservation> Reservations { get; set; }
+
+        public List<FlightType> FlightType { get; set; }
 
         public async Task OnGet(string id)
         {
@@ -27,11 +35,12 @@ namespace Flight_Manager.Web.Areas.Identity.Pages.FlightList
             var allReservations = await context.Reservations.ToListAsync();
             foreach (var element in allReservations)
             {
-                if (element.PlaneId == Flight.PlaneId)
+                if (element.PlaneId == Flight.Id)
                 {
                     Reservations.Add(element);
                 }
             }
         }
+
     }
 }

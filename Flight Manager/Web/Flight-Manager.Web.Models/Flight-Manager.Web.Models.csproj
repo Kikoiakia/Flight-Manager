@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Data\Flight-Manager.Data.Models\Flight-Manager.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Data\Flight-Manager.Data\Flight-Manager.Data.csproj" />
   </ItemGroup>
 
   <ItemGroup>

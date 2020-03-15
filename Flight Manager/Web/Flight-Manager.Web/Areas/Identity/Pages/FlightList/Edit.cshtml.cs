@@ -5,6 +5,7 @@ namespace Flight_Manager.Web.Areas.Identity.Pages.FlightList
     using System.Threading.Tasks;
     using AspNetCore.CustomValidation.Attributes;
     using Flight_Manager.Data;
+    using Flight_Manager.Web.Models.Flight;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -43,9 +44,10 @@ namespace Flight_Manager.Web.Areas.Identity.Pages.FlightList
             public DateTime FlightLanding { get; set; }
 
             [Required]
+            
             public string PlaneModel { get; set; }
 
-            [Required]
+
             public string PlaneId { get; set; }
 
             [Required]
@@ -104,5 +106,7 @@ namespace Flight_Manager.Web.Areas.Identity.Pages.FlightList
             }
             return RedirectToPage();
         }
+
+
     }
 }

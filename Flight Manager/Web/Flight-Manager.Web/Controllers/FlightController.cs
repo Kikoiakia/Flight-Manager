@@ -1,6 +1,8 @@
 ﻿namespace Flight_Manager.Web.Controllers
 {
     using System;
+    using System.ComponentModel.DataAnnotations;
+    using System.Linq;
     using System.Threading.Tasks;
     using Flight_Manager.Data;
     using Flight_Manager.Data.Models;
@@ -53,13 +55,26 @@
                     CapacityBuisness = model.CapacityBuisness
                 };
 
+
+                var checkFlight = _context.Flights.FirstOrDefault(f => f.PlaneId == flight.PlaneId);
+                if (checkFlight != null)
+                {
+                    ViewBag.Message = $"Plane id {flight.PlaneId} already exists";
+
+                    return View(model);
+                }
+
                 _context.Add(flight);
                 await _context.SaveChangesAsync();
                 return Redirect("/Identity/FlightList");
+
+
+
             }
 
             return View(model);
         }
+
 
     }
 }

@@ -1,8 +1,10 @@
 ﻿namespace Flight_Manager.Web.Models
 {
     using AspNetCore.CustomValidation.Attributes;
+    using Flight_Manager.Web.Models.Flight;
     using System;
     using System.ComponentModel.DataAnnotations;
+
     public class FlightCreateViewModel
     {
 
@@ -39,5 +41,6 @@
 
 
     }
+
 }
 

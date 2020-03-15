@@ -51,7 +51,7 @@ namespace Flight_Manager.Web.Controllers
 
         public ActionResult Reservate(string id)
         {
-            return RedirectToAction("Reservate", "Reservation", id);
+            return RedirectToAction("Reservate", "Reservation",id);
         }
     }
 }
